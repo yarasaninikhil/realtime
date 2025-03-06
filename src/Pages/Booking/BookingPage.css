@@ -1,0 +1,98 @@
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.tour-details, .user-info, .payment {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.tourid {
+  display: flex;
+}
+
+.con {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.tour-details p, .user-info input, .payment p {
+  margin: 10px 0;
+}
+
+strong {
+  color: #44120c;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.confirmation-container {
+  text-align: center;
+}
+
+.confirmation-container h2 {
+  margin-bottom: 20px;
+}
+
+.confirmation-container p {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.download-pdf {
+  margin: 20px;
+}
+
+p[style="color: red"] {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .tourid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tour-details, .user-info {
+    width: 100%;
+  }
+
+  .payment {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    width: 100%;
+  }
+}

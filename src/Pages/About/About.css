@@ -1,0 +1,184 @@
+.about{
+  background-color: aliceblue;
+}
+
+
+.Aboutimg{
+background-image:url('https://as2.ftcdn.net/jpg/06/31/41/73/1000_F_631417337_C1roJWnyYJFrpsjMtdDkBFptCIKLtTgm.jpg');
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 50vh;
+background-position: center;
+background-size: cover;
+
+}
+.story{
+  text-align: center;
+  text-decoration: none;
+}
+.yna{
+  text-align: center;
+  color: #000;
+  font-size: 26px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.about-right p{
+  font-size: 18px;
+  color: #000;
+}
+.about-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+}
+
+.about-right img{
+  width: 200px;
+  height: 260px;
+  
+}
+
+.Our p{
+  text-align: center;
+  color: #000;
+}
+.about-main {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+
+.what span{
+  font-size: 17px;
+  color: #000;
+}
+
+
+.about-right img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 40px 0;
+  border-radius: 10px;
+  background-color: #d4cfcf;
+  margin-bottom: 10px;
+}
+
+.Gallery h1 {
+  font-size: 2rem;
+  color: #171515;
+  margin-bottom: 20px;
+}
+
+.slider {
+  position: relative;
+  width: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.slide-image {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+  .about-main {
+    width: 90%;
+  }
+
+  .about-right {
+    flex-direction: column;
+  }
+
+  .about-right img {
+    max-width: 80%;
+  }
+
+  .Gallery {
+    padding: 20px;
+  }
+
+  .slider {
+    max-width: 90%;
+  }
+
+  .slide-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Aboutimg {
+    height: 40vh;
+  }
+
+  .Gallery h1 {
+    font-size: 1.8rem;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .slide-image {
+    height: 160px;
+  }
+
+  .prev, .next {
+    padding: 8px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Aboutimg {
+    height: 35vh;
+  }
+
+  .about-main {
+    width: 95%;
+  }
+
+  .yna {
+    font-size: 22px;
+  }
+
+  .Gallery h1 {
+    font-size: 1.5rem;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .slide-image {
+    height: 140px;
+  }
+
+  .prev, .next {
+    padding: 6px;
+    font-size: 14px;
+  }
+}
+
+

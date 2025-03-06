@@ -1,0 +1,148 @@
+
+.footer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  color: black;
+
+}
+
+.footerwrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+.video-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.logo,
+.useful-links,
+.contact-info,
+.social-media,
+.bottom-bar {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.useful-links h3,
+.contact-info h3 {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.useful-links ul,
+.contact-info ul {
+  list-style: none;
+ 
+
+  padding: 0;
+}
+
+
+
+.useful-links li,
+.contact-info li {
+  margin-bottom: 5px;
+  color: black;
+}
+
+.footer .social-media a {
+  
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer .bottom-bar {
+  background: #e74c3c;
+width: 100%;
+height: auto;
+display: flex;
+justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+
+.footer .bottom-bar a {
+    color: rgb(192, 187, 187);
+
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .footerwrap {
+      flex-direction: column;
+      text-align: left;
+    }
+    .logo {
+      font-size: 32px; 
+    }
+    .tagline,
+    .useful-links h3,
+    .contact-info h3 {
+      font-size: 19.2px;
+    }
+    .useful-links li,
+    .contact-info li {
+      font-size: 14px;
+    }
+    .footer .social-media a {
+      font-size: 18px; 
+    }
+    .footer .bottom-bar {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footerwrap {
+      flex-direction: column;
+      width: 100%;
+      text-align: left;
+      padding: 10px;
+    }
+    .logo {
+      font-size: 24px;
+      text-align: center;
+    }
+    .tagline,
+    .useful-links h3,
+    .contact-info h3 {
+        text-align: center;
+      font-size: 16px; 
+    }
+    .useful-links li,
+    .contact-info li {
+        text-align: center;
+
+      font-size: 12px; 
+    }
+    .footer .social-media a {
+      font-size: 16px; 
+    }
+    .footer .bottom-bar {
+   
+      font-size: 11px 
+    }  
+}

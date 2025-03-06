@@ -1,0 +1,128 @@
+
+.district-page {
+  width: 100%;
+  z-index: 1;
+}
+
+.district-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.district-tours {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.tour-card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  z-index: 1;
+}
+
+.tour-card img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+h4 {
+  text-decoration: line-through;
+}
+
+.para1, .para2, .para3, .para4 {
+  display: flex;
+
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fdf3f3;
+  border: 1px solid #dbd9d9;
+  border-radius: 8px;
+  gap: 30px;
+  flex-direction: column; 
+}
+
+.tour1, .tour2, .tour3, .tour4 {
+  flex: 1;
+  padding: 10px;
+}
+
+.tour1 h1, .tour2 h1, .tour3 h1, .tour4 h1 {
+  font-size: 24px;
+  color: crimson;
+  margin-bottom: 10px;
+}
+
+.tour1 p, .tour2 p, .tour3 p, .tour4 p {
+  margin-bottom: 10px;
+}
+
+.tour1 span, .tour2 span, .tour3 span, .tour4 span {
+  color: #ff5722;
+  font-weight: bold;
+}
+
+.Book {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.Book:hover {
+  background-color: #e64a19;
+}
+
+.tour-card video {
+  width: 100%;
+  height: auto;
+
+}
+
+@media (min-width: 768px) {
+  .para1, .para2, .para3, .para4 {
+    flex-direction: row; 
+  }
+}
+
+@media (max-width: 767px) {
+  .district-page {
+    padding: 10px;
+  }
+  video {
+    width: 100%;
+    height: 100px;
+    border-radius: 6px;
+  }
+  .district-page h1 {
+    font-size: 20px;
+  }
+
+  .tour-card {
+    gap: 20px;
+  }
+
+  .tour-card img {
+    height: 200px;
+  }
+
+  .para1, .para2, .para3, .para4 {
+    height: auto;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .tour1 h1, .tour2 h1, .tour3 h1, .tour4 h1 {
+    font-size: 18px;
+  }
+
+  .Book {
+    padding: 8px 16px;
+  }
+}

@@ -1,0 +1,91 @@
+.admin-nav {
+  background-color: #4b77e6;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.email-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.admin-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.admin-nav-links li {
+  display: inline-block;
+}
+
+.admin-nav-links a,
+.logout-btn {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.logout-btn {
+  background: #d9534f;
+  border: none;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #c9302c;
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block; 
+  }
+
+  .admin-nav-links {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    padding: 10px 0;
+  }
+
+  .admin-nav-links.open {
+    display: flex;
+  }
+
+  .admin-nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
+}

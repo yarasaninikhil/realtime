@@ -1,0 +1,467 @@
+@keyframes openPage {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.headvideo {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.video-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  gap: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1024px) {
+  .headvideo {
+    height: 600px; 
+  }
+  .overlay-text {
+    font-size: 32px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .headvideo {
+    height: 250px; 
+  }
+  .overlay-text {
+    font-size: 15px; 
+  }
+}
+.Section-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.Section-trip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Section-trip h2 {
+  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  color: orangered;
+}
+.Section-trip p{
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+
+
+.title {
+  color: #0e0955;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.district-filter {
+  justify-content: flex-start;
+  padding: 20px;
+  animation: openPage 1s ease-out;
+  background-color:rgb(245, 232, 216);
+}
+
+.district-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.district-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.district-grid:hover .district-item {
+  opacity: 0.5;
+}
+
+.district-item:hover {
+  opacity: 1 !important;
+}
+
+.district-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.district-name {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: whitesmoke;
+  font-weight: 700;
+  padding: 2px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.district-item:hover .district-name {
+  bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .district-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .district-image {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .district-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .district-image {
+    height: 120px;
+  }
+  .district-name {
+    font-size: 16px;
+  }
+}
+
+
+.diagonal-section {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-image: url("https://www.traveltoindia.org/images/hills-tours.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: solid 4px black;
+  margin-bottom: 3px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.content-image {
+  width: 650px;
+  height: 450px;
+  border-radius: 8px;
+  margin-left: 20px;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.content-image:hover {
+  filter: blur(2px);
+}
+
+.Escape {
+  color: turquoise;
+}
+
+.use {
+  color: black;
+}
+
+.stats {
+  color: whitesmoke;
+}
+@media (max-width: 1024px) {
+  .diagonal-section {
+    height: 400px;
+  }
+  .content {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .content-image {
+    width: 80%;
+    height: 350px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+ 
+  .content-image {
+    width: 380px;
+    height: 220px;
+
+  }
+  .Escape, .use, .stats {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+
+
+
+.Section-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 45vh;
+  background: linear-gradient(
+      to right,
+      #ff6600 50%,
+      rgba(255, 255, 255, 0) 50%
+    ),
+    url('https://www.traveltoindia.org/images/hills-tours.jpg');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.testimonial-slider h1 {
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 700;
+  -webkit-text-stroke: 1px #000;
+  color: white;
+}
+.testimonial-main {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-text {
+  display: flex;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 28px;
+  color: white;
+}
+
+.testimonial-text span:nth-child(2) {
+  color: navy;
+}
+
+.underline {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.underline .long {
+  width: 80px;
+  height: 4px;
+  border-radius: 5px;
+  background: brown;
+}
+
+.underline .short {
+  width: 35px;
+  height: 4px;
+  border-radius: 5px;
+  background: white;
+}
+
+.testimonial-main p {
+  font-size: 18px;
+  text-align: left;
+  max-width: 600px;
+  margin-top: 10px;
+}
+
+
+.testimonial-slider {
+  width: 55%;
+  height: 40vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  width: 680px;
+  height: 32vh;
+  gap: 20px;
+
+  transition: transform 1s ease-in-out;
+}
+
+.testimonial-card {
+  background: white;
+
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  min-width: 0%;
+  position: relative;
+  opacity: 1.1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.testimonial-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #002366;
+}
+
+.testimonial-card p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.testimonial-card .location {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.testimonial-card .quote {
+  position: absolute;
+  right: 40px;
+  top: 0px;
+  font-size: 90px;
+  color: #ff6600;
+}
+
+.testimonial-navigation {
+  position: absolute;
+  bottom: 45px;
+  left: 30%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.testimonial-navigation button {
+  background: transparent;
+  border: 2px solid #0b0637;
+  color: wheat;
+  padding: 6px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.testimonial-navigation button:hover {
+  background: white;
+  color: #ff6600;
+}
+
+
+@media (max-width: 1024px) {
+  .Section-3 {
+    flex-direction: column;
+    height: auto;
+ 
+    background: #ff6600;
+  }
+
+  .testimonial-main {
+    width: 100%;
+    text-align: center;
+  }
+
+  .testimonial-slider {
+    width: 100%;
+  }
+
+  .testimonial-wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .testimonial-card {
+    width: 100%;
+  }
+
+  .testimonial-navigation {
+    left: 40%;
+    bottom: 0px;
+    width: 47px;
+    height: 40px;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .Section-3 {
+    flex-direction: column;
+    height: 400px;
+    background: #ff6600;
+  }
+  .testimonial-navigation button {
+   display: none;
+  }
+  
+  .testimonial-card {
+    width: 100%;
+  }
+ 
+.testimonial-wrapper {
+  display: flex;
+  width: auto;
+  gap: 20px;
+
+  transition: transform 1s ease-in-out;
+}
+}
+

@@ -5,7 +5,7 @@ import Navbar from "../../Component/Navbar/Navbar";
 import Footer from "../../Component/Footer/Footer";
 import ContactForm from "./ContactForm";
 import { FaCheck, FaTimes } from "react-icons/fa";
-import "./see.css";
+import "./See.css";
 
 const SeePage = () => {
   const { tourId, placeIndex } = useParams();
